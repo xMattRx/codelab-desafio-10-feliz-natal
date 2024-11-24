@@ -71,7 +71,9 @@
     width: 100%;
 
     &-subimage {
-      max-width: 214px;
+      @media (max-width: 767px) {
+        max-width: 214px;
+      }
     }
 
     &-container {
@@ -387,6 +389,11 @@
     &-icons {
       display: flex;
       gap: 36px;
+
+      @media (max-width: 767px) {
+        gap: 31px;
+
+      }
     }
 
     &-icon {
